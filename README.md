@@ -4,7 +4,7 @@
 - Queue (by Linked List)
 - SingleLinkedList.SingleLinkedList
 - DoubleLinkedList.DoubleLinkedList
-- CircularList
+- CircularList.CircularList
 - HashMap
 - Graph
 - BinaryTree
