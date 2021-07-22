@@ -2,7 +2,7 @@
 
 - Stack (by Array)
 - Queue (by Linked List)
-- SingleLinkedList
+- SingleLinkedList.SingleLinkedList
 - DoubleLinkedList
 - CircularList
 - HashMap

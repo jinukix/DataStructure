@@ -1,3 +1,5 @@
+package MyQueue;
+
 class Node <T>{
     T data;
     Node<T> next;
@@ -7,12 +9,12 @@ class Node <T>{
     }
 }
 
-public class MyQueue <T>{
+public class Queue<T>{
     private Node<T> head;
     private Node<T> tail;
     private int count;
 
-    MyQueue() { clear(); }
+    Queue() { clear(); }
 
     public boolean isEmpty() {
         return (count==0);
@@ -29,7 +31,6 @@ public class MyQueue <T>{
 
         this.tail = newNode;
         this.count++;
-        System.out.println("enqueue: " + elem);
     }
 
     public T dequeue() {
@@ -51,38 +52,28 @@ public class MyQueue <T>{
         this.head = tempNode.next;
         this.count--;
 
-        System.out.println("dequeue: " + data);
         return data;
     }
 
     public T front() {
         if (isEmpty()) {
-            System.out.println("fail front. queue is empty");
             return null;
         }
 
-        System.out.println("back: " + this.head.data);
         return this.head.data;
     }
 
     public T back() {
         if (isEmpty()) {
-            System.out.println("fail back. queue is empty");
             return null;
         }
 
-        System.out.println("back: " + this.tail.data);
         return this.tail.data;
     }
 
     public void printAll() {
-        if (isEmpty()) {
-            System.out.println("fail print. queue is empty");
-            return;
-        }
-
         Node<T> temp = this.head;
-        System.out.println("elem: ");
+        System.out.print("elem: ");
         while (temp!=null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
@@ -97,7 +88,7 @@ public class MyQueue <T>{
     }
 
     public static void main(String[] args) {
-        MyQueue<Integer> intQueue = new MyQueue<>();
+        Queue<Integer> intQueue = new Queue<>();
 
         for (int i = 0; i < 10; i++) {
             intQueue.enqueue(i);
@@ -113,7 +104,7 @@ public class MyQueue <T>{
         intQueue.clear();
         intQueue.printAll();
 
-        MyQueue<String> strQueue = new MyQueue<>();
+        Queue<String> strQueue = new Queue<>();
         strQueue.enqueue("one");
         strQueue.enqueue("two");
         strQueue.enqueue("three");
