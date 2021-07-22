@@ -1,7 +1,5 @@
 package CircularList;
 
-import SingleLinkedList.SingleLinkedList;
-
 class Node <T>{
     T data;
     Node<T> next;

@@ -5,7 +5,7 @@
 - SingleLinkedList.SingleLinkedList
 - DoubleLinkedList.DoubleLinkedList
 - CircularList.CircularList
-- HashMap
+- HashMap.HashMap
 - Graph
 - BinaryTree
 - PriorityQueue

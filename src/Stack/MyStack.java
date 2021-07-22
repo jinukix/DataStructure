@@ -1,16 +1,16 @@
-package MyStack;
+package Stack;
 
-public class Stack<T> {
+public class MyStack<T> {
     private int top;
     private T[] stackArr;
 
     @SuppressWarnings("unchecked") // 지네릭 배열 생성시 경고 -> new 연산자는 컴파일 시 타입이 정확히 무엇인지 알아야함.
-    public Stack(int size) {
+    public MyStack(int size) {
         this.top = -1;
         this.stackArr = (T[]) new Object[size];
     }
 
-    public Stack() {
+    public MyStack() {
         this(10);
     }
 
@@ -63,7 +63,7 @@ public class Stack<T> {
     }
 
     public static void main(String[] args) {
-        Stack<Integer> intStack = new Stack<>();
+        MyStack<Integer> intStack = new MyStack<>();
         for (int i = 0; i < 5; i++) {
             intStack.push(i);
         }
@@ -76,7 +76,7 @@ public class Stack<T> {
         intStack.clear();
         intStack.printAll();
 
-        Stack<String> strStack = new Stack<>(4);
+        MyStack<String> strStack = new MyStack<>(4);
         strStack.push("one");
         strStack.push("two");
         strStack.push("three");
@@ -84,5 +84,4 @@ public class Stack<T> {
         strStack.push("five");
         strStack.printAll();
     }
-
 }

@@ -1,4 +1,4 @@
-package MyQueue;
+package Queue;
 
 class Node <T>{
     T data;
