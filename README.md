@@ -3,7 +3,7 @@
 - Stack (by Array)
 - Queue (by Linked List)
 - SingleLinkedList.SingleLinkedList
-- DoubleLinkedList
+- DoubleLinkedList.DoubleLinkedList
 - CircularList
 - HashMap
 - Graph

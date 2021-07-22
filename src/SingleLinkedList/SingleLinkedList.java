@@ -130,7 +130,7 @@ public class SingleLinkedList<T>{
     public void printAll() {
         Node<T> tempNode = head;
 
-        System.out.println("elem: ");
+        System.out.print("elem: ");
         for (int i = 0; i < getSize(); i++) {
             System.out.print(tempNode.data + " ");
             tempNode = tempNode.next;
