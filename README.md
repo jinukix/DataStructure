@@ -2,10 +2,13 @@
 
 - Stack (by Array)
 - Queue (by Linked List)
-- SingleLinkedList.SingleLinkedList
-- DoubleLinkedList.DoubleLinkedList
-- CircularList.CircularList
-- HashMap.HashMap
+- SingleLinkedList
+- DoubleLinkedList
+- CircularList
+- HashMap
 - Graph
 - BinaryTree
+  
+
 - PriorityQueue
+- RedBlackTree

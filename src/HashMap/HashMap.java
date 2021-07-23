@@ -1,7 +1,5 @@
 package HashMap;
 
-import java.util.Arrays;
-
 class Node <K, V>{
     K key;
     V value;
@@ -40,7 +38,6 @@ public class HashMap <K, V>{
             entry = entry.hashNext;
         }
 
-        // 같은 키 값이 존재하는 경우 덮어쓰기.
         if (entry.key == key) {
             entry.value = value;
             return;
@@ -115,7 +112,7 @@ public class HashMap <K, V>{
             hashMap.put(alpha ,i);
         }
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 26; i++) {
             char alpha = (char) (65 + i);
             hashMap.printAllByKey(alpha);
         }
